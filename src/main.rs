@@ -21,14 +21,13 @@ fn main() -> Result<(), Box<dyn Error>> {
     }
 
     // Iniciar la interfaz gráfica
-    gui::start();
+    let _ = gui::show();
     Ok(())
 }
 
-
 fn search() -> Result<(), Box<dyn Error>> {
     get_clipboard_content()?.iter().for_each(|content| {
-        println!("{}", content);
+        println!("{}", content.content);
     });
     Ok(())
 }
