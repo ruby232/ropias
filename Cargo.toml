@@ -1,0 +1,9 @@
+[package]
+name = "ropias"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+arboard = "3.4.1"
+iced = "0.12.1"
+rusqlite = "0.32.1"
